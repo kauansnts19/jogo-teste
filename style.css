@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: #87CEEB; /* céu azul */
+  font-family: Arial, sans-serif;
+}
+
+#game {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+#player {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: #ff4444;
+  border: 4px solid #aa0000;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  transition: transform 0.08s;
+}
+
+.ground {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 120px;
+  background: linear-gradient(to bottom, #7cfc00, #228b22);
+}
+
+.cloud {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+#instructions {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  background: rgba(0,0,0,0.5);
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  user-select: none;
+}
